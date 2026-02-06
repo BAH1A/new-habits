@@ -1,0 +1,27 @@
+{
+  "type": "module",
+  "name": "new-habits",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx watch 'tsx src/server.ts' src #npx watch tsx src/server.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "^25.2.0",
+    "prisma": "^7.3.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@fastify/cors": "^11.2.0",
+    "@prisma/adapter-better-sqlite3": "^7.3.0",
+    "@prisma/client": "^7.3.0",
+    "dotenv": "^17.2.3",
+    "fastify": "^5.7.4"
+  }
+}
