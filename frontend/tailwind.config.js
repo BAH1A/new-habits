@@ -2,7 +2,11 @@
 export default {
   content: ['./src/**/*.tsx', './index.html'],
   theme: {
-    extend: {},
+    extend: {
+      colors:{
+        batata: '#09090A'
+      }
+    },
   },
   plugins: [],
 }
