@@ -1,9 +1,9 @@
 #backend
 backend/node_modules
-backend/.env
+backend/local.env
 backend/generated/prisma
 
 #front-end
 
 frontend/node_modules
-frontend/.env
+frontend/local.env
