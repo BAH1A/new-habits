@@ -62,7 +62,7 @@ export async function appRoutes(app: FastifyInstance){
         })
         const completeHabits= day?.dayHabits.map(dayHabit => {
             return dayHabit.habit_id
-        })
+        }) ?? []
         return {
             possibleHabits, completeHabits
         }
@@ -116,7 +116,6 @@ export async function appRoutes(app: FastifyInstance){
         SELECT
             D.id,
             D.date,
-
             (
                 SELECT
                     cast(count(*) as float)

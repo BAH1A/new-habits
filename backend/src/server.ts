@@ -5,7 +5,10 @@ import { appRoutes } from './routes.js';
 
 const app = Fastify();
 
-app.register(cors)
+app.register(cors, {
+  origin: true,
+  methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
+})
 app.register(appRoutes)
 
 const porta_api = Number(process.env.PORT)
